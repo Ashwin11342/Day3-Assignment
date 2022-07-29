@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            height: 50vh;
+            width: 100vw;
+            background-color: blue;
+            color: aliceblue;
+        }
+
+        h3 {
+            background-color: black;
+            color: aliceblue;
+        }
+
+        .std {
+            padding: 2px;
+            margin: 2px;
+        }
+    </style>
+    <title>JS_Assignment_3</title>
+    <h3>
+        <p class="std">Create a div that covers half the screen and when clicked
+            becomes full screen and changes color.</p>
+    </h3>
+
+</head>
+
+<body>
+
+    <script>
+        function fullscrn() {
+            document.querySelector("div").style.backgroundColor = "red";
+            document.querySelector("div").style.height = "100vh";
+        }
+    </script>
+    <div onclick="fullscrn()">
+        <p class="std">Click Me</p>
+    </div>
+</body>
+
+</html>
